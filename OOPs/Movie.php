@@ -13,4 +13,9 @@ class Movie
         $this->genre = $_genre;
         $this->metaDataList = $_metaDataList;
     }
+
+    public function getDetails()
+    {
+        return "Name: " . $this->name . " Director: " . $this->director . " Genre: " . $this->genre;
+    }
 }
